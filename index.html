@@ -4,9 +4,596 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crap portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/51f27b15da.js" crossorigin="anonymous"></script>
+    <title>weather app</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="left-header">
+            <div id="weather">
+            <img id="channel" src="https://icons.iconarchive.com/icons/dakirby309/windows-8-metro/256/Web-The-Weather-Channel-Metro-icon.png" alt="weather channel">
+            </div>
+            <div id="IBM">
+                <p>An IBM Business</p>
+            </div>
+        </div>
+        <div class="middle-header">
+            <div class="div1">
+            <input class="postcode" type="search" name="search" size="60"  placeholder="Search City or Postcode">
+            </div>
+            <div class="div2">
+            <i id="search" class="material-icons">search</i>
+            </div>
+        </div>
+        <div class="right-header">
+            <div class="right-1">
+                <i class="fa fa-globe" style="font-size:30px;color: rgb(255,255,255);"></i>
+            </div>
+            <div class="country">
+                <p>TZ</p>
+            </div>
+            <div class="slash">
+                <p>|</p>
+            </div>
+            <div class="celsius">
+                <p style="color:rgb(255,255,255) ;"><sup>o</sup>C</p>
+            </div>
+            <div>
+                <i class="material-icons" style="font-size:65px;color:rgb(255,255,255)">arrow_drop_down</i>
+            </div>
+        </div>
+    </div>
+
+    <div class="empty">
+        <div id="wingu">
+            <span>
+                <i class='fas fa-cloud-sun' style='font-size:24px'></i>
+                26 <sup>o</sup> Dodoma, 03
+            </span>
+        </div>
+    </div>
+    <div class="topnav">
+        <div class="left-nav">
+            <a href="#">Today</a>
+             <a href="#">Hourly</a>
+            <a href="#">10 Day</a>
+            <a href="#">Weekend</a>
+            <a href="#">Monthly</a>
+            <a href="#">Radar</a>
+        </div>
+        <div class="dropdown">
+            <a class="dropbtn" href="#">More Forecasts</a>
+            <div class="dropdown-content">
+                <div id="droping">
+                    <h2>SPECIAL FORECASTS</h2>
+                </div>
+                <a href="#">Allergy Tracker</a>
+                <a href="#">Air Quality Forecasts</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-1">
+        <div class="upper">
+            <span><strong>Dodoma, 03</strong> As of 10:41 EAT</span>
+        </div>
+        <div class="lower">
+            <div id="degree-27">
+                <span>27<sup>o</sup></span>
+            </div>
+            <div id="fair">
+                <span>Fair</span>
+            </div>
+            <div id="day">
+               <span>Day 33<sup>o</sup> Night 18<sup>o</sup></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="carry-2">
+        <div class="block-2">
+            <div class="header=h2" >
+                <span><h2>Today's Forecast for Dodoma, 03</h2></span>
+            </div>
+            <div class="body-1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>Morning</h3>
+                            <div>
+                                <span class="namba">25<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>--</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Morning</h3>
+                            <div>
+                                <span class="namba">32<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>1%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Morning</h3>
+                            <div>
+                                <span class="namba">24<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://p.kindpng.com/picc/s/184-1848488_moon-star-and-crescent-clip-art-moon-and.png" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>--</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="unique" href="#">
+                            <h3>Morning</h3>
+                            <div>
+                                <span class="namba">20<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBca5nftsz0v8OYnZvq_Y8gfGetKXji_2GGg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>6%</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="#">Next Hours</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-3">
+        <div class="header-3">
+            <h2>Weather Today in Dodoma, 03</h2>
+        </div>
+       <div class="contain">
+        <div class="feel">
+            <div id="text">24<sup>o</sup></div>
+            <div id="normal-text">Feels Like</div>
+        </div>
+        <div class="sunrise">
+            <i class="material-icons yangu">file_upload</i>
+            <span>6:09</span>
+            <i class="material-icons yangu">file_download</i>
+            <span>18:32</span>
+        </div>
+       </div>
+       <div class="details">
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>High/Low</span>
+            </div>
+            <div class="temperature">
+                <span>--/18<sup>o</sup></span>
+            </div>
+        </div>
+
+        <div class="no-1 wind">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Wind</span>
+            </div>
+            <div class="temperature">
+                <span>23km/h%</span>
+            </div>
+        </div>
+
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Humidity</span>
+            </div>
+            <div class="temperature">
+                <span>62%</span>
+            </div>
+        </div>
+
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Dew Point</span>
+            </div>
+            <div class="temperature">
+                <span>16<sup>o</sup></span>
+            </div>
+        </div>
+
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Pressure</span>
+            </div>
+            <div class="temperature">
+                <span>1011.2 mb</span>
+            </div>
+        </div>
+
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>UV Index</span>
+            </div>
+            <div class="temperature">
+                <span>0 of 10</span>
+            </div>
+        </div>
+
+        <div class="no-1 except">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Visibility</span>
+            </div>
+            <div class="temperature">
+                <span>Unlimited</span>
+            </div>
+        </div>
+
+        <div class="no-1">
+            <div class="thermometer">
+                <i class="fa fa-thermometer" style="font-size:24px"></i>
+            </div>
+            <div class="letters">
+                <span>Moon Phase</span>
+            </div>
+            <div class="temperature">
+                <span>Full</span>
+            </div>
+        </div>
+
+        
+       </div>
+    </div>
+
+
+    <div class="carry-2">
+        <div class="block-2">
+            <div class="header=h2" >
+                <span><h2>Hourly Forecast</h2></span>
+            </div>
+            <div class="body-1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>Now</h3>
+                            <div>
+                                <span class="namba">24<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>1%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>23:00</h3>
+                            <div>
+                                <span class="namba">23<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>1%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>0:00</h3>
+                            <div>
+                                <span class="namba">24<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://p.kindpng.com/picc/s/184-1848488_moon-star-and-crescent-clip-art-moon-and.png" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>2%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>1:00</h3>
+                            <div>
+                                <span class="namba">22<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://p.kindpng.com/picc/s/184-1848488_moon-star-and-crescent-clip-art-moon-and.png" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>2%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="unique" href="#">
+                            <h3>2:00</h3>
+                            <div>
+                                <span class="namba">21<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBca5nftsz0v8OYnZvq_Y8gfGetKXji_2GGg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>2%</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="#">Next 48 Hours</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="carry-2">
+        <div class="block-2">
+            <div class="header=h2" >
+                <span><h2>Daily Forecast</h2></span>
+            </div>
+            <div class="body-1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <h3>Today</h3>
+                            <div>
+                                <span class="namba">--</span>
+                            </div>
+                            <div>
+                                <span class="namba-2">18<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>7%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Thu 10</h3>
+                            <div>
+                                <span class="namba">33<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span class="namba-2">19<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hOCEAT-wrIjIKBrMvfAxQxYwEX6o7bGRlg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>5%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Fri 11</h3>
+                            <div>
+                                <span class="namba">32<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span class="namba-2">18<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://p.kindpng.com/picc/s/184-1848488_moon-star-and-crescent-clip-art-moon-and.png" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>5%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Sat 12</h3>
+                            <div>
+                                <span class="namba">32<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span class="namba-2">18<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://p.kindpng.com/picc/s/184-1848488_moon-star-and-crescent-clip-art-moon-and.png" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>13%</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="unique" href="#">
+                            <h3>Sun 13</h3>
+                            <div>
+                                <span class="namba">32<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span class="namba-2">18<sup>o</sup></span>
+                            </div>
+                            <div>
+                                <span>
+                                    <img id="sun" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBca5nftsz0v8OYnZvq_Y8gfGetKXji_2GGg&usqp=CAU" alt="The sun and Cloud icon">
+                                </span>
+                            </div>
+                            <div>
+                                <span>8%</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-1">
+                <a href="#">Next 10 Days</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="line-1">
+            <div class="connect">
+                <span>Connect With Us</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li>
+                        <a id="media" href="#">
+                            <i class='fab fa-facebook' style='font-size:24px'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='fab fa-twitter' style='font-size:36px'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='fab fa-instagram' style='font-size:36px'></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class='fab fa-youtube' style='font-size:36px'></i>
+                        </a>
+                    </li>
+                </ul>                
+            </div>
+            <div class="no-background">
+                <img id="drop" src="/Images/weather.png" alt="The weather company">
+                <img id="drop-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/The_Weather_Channel_logo_2005-present.svg/1200px-The_Weather_Channel_logo_2005-present.svg.png" alt="weather 2">
+                <img id="underground" src="/Images/underground.png" alt="Weather Underground">
+            </div>
+        </div>
+        <div class="line-2">
+            <a href="#">Feedback</a>
+            <a href="#">Weather API</a>
+            <a href="#">Press Room</a>
+        </div>
+        <div class="line-3">
+            <ul>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Accessinility Statement</a>
+                </li>
+                <li>
+                    <a href="#">Data Vendors</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="line-4">
+            <span>
+            <img id="georgia" src="https://seeklogo.com/images/G/georgia-logo-EC15A7A26C-seeklogo.com.png" alt="Georgia Town">
+            </span>
+            <span id="georgia-text">
+                Georgia
+            </span>
+            <span>
+                <i class='fas fa-wheelchair'></i>
+            </span>
+            <span>
+                <i class='fas fa-laptop'></i>
+            </span>
+        </div>
+        <div class="line-5">
+            <span id="last">
+                We recognise our responsibility to use data and technology for good. Take control of your data.
+            </span>
+        </div>
+        <div class="line-6">
+            <span id="rights">Data Rights</span>
+        </div>
+        <div class="line-7">
+            <span>&copy; Copyright TWC Product and Technology LLC 2014, 2022</span>
+        </div>
+        <div class="line-8">
+            <span>Powered by the <a href="#"><i class="material-icons" style="font-size:48px;color:red">cloud_queue</i>
+                <span>IBM Cloud</span>
+            </a></span>
+        </div>
+    </div>
 </body>
 </html>
